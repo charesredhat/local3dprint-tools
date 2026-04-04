@@ -1,0 +1,16 @@
+# Secrets — never commit these
+.env
+
+# Claude Code local settings (may contain API keys in allowed commands)
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Large generated files (regenerate with generate_*.py scripts)
+*.gcode
+*.stl
