@@ -45,6 +45,26 @@ monitor()
 
 ---
 
+## Camera Feed
+
+OctoPrint streams webcam video via mjpg-streamer on port 8080.
+
+| URL | Purpose |
+| --- | ------- |
+| `http://192.168.1.192:8080/?action=stream` | Live MJPEG stream |
+| `http://192.168.1.192:8080/?action=snapshot` | Single JPEG snapshot |
+
+Grab a snapshot from the terminal:
+
+```bash
+curl http://192.168.1.192:8080/?action=snapshot -o snapshot.jpg
+```
+
+**Note:** Camera is currently mounted sideways. Enable rotation in OctoPrint under
+Settings → Webcam → Rotate 90°, or set `rotate90: true` via the API.
+
+---
+
 ## print_jobs/01_cylinder_extension/
 
 Hollow sleeve that press-fits over a 15.4 mm OD cylinder (15.6 mm ID, 19.6 mm OD, 2 mm wall).
