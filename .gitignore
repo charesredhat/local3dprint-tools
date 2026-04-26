@@ -1,8 +1,8 @@
 # Secrets — never commit these
 .env
 
-# Claude Code local settings (may contain API keys in allowed commands)
-.claude/settings.local.json
+# Claude Code settings (may contain API keys in allowed commands)
+.claude/
 
 # Python
 __pycache__/

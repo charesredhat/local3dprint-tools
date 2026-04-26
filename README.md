@@ -51,13 +51,14 @@ OctoPrint streams webcam video via mjpg-streamer on port 8080.
 
 | URL | Purpose |
 | --- | ------- |
-| `http://192.168.1.192:8080/?action=stream` | Live MJPEG stream |
-| `http://192.168.1.192:8080/?action=snapshot` | Single JPEG snapshot |
+| `http://<octoprint-host>:8080/?action=stream` | Live MJPEG stream |
+| `http://<octoprint-host>:8080/?action=snapshot` | Single JPEG snapshot |
 
 Grab a snapshot from the terminal:
 
 ```bash
-curl http://192.168.1.192:8080/?action=snapshot -o snapshot.jpg
+# replace <octoprint-host> with the value from your .env OCTOPRINT_URL
+curl http://<octoprint-host>:8080/?action=snapshot -o snapshot.jpg
 ```
 
 **Note:** Camera is currently mounted sideways. Enable rotation in OctoPrint under

@@ -20,7 +20,7 @@ Several secrets and vulnerabilities were found and fixed before any commit could
 **File:** `octoprint_manager.py` line 13
 **Before:**
 ```python
-API_KEY = "5362FF061AF24BAEBB9EA9C13CCA127C"
+API_KEY = "<redacted>"
 ```
 **After:** Loaded from environment variable via `.env` file (gitignored).
 ```python
